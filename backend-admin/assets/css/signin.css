@@ -1,0 +1,109 @@
+body {
+  font-family: 'Roboto', 'Arial', sans-serif; /* Menetapkan font yang lebih umum dan modern */
+  background-color: #53a3ed; /* Warna latar belakang */
+  height: 100vh; /* Tinggi halaman penuh */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+/* Mengatur ukuran dan tata letak card */
+.login-box {
+  width: 400px; /* Lebar card */
+  margin: 7% auto; /* Agar card berada di tengah halaman */
+  padding: 20px; /* Memberikan padding di dalam card */
+}
+
+.card {
+  border-radius: 15px; /* Membuat sudut card membulat */
+  background-color: #f9f9f9; /* Warna latar belakang card */
+  border: 1px solid #ddd; /* Border ringan untuk card */
+}
+
+/* Mengatur font di dalam card */
+.login-box-msg {
+  font-size: 16px; /* Ukuran font untuk pesan login */
+  color: #555; /* Warna teks */
+  text-align: center; /* Memusatkan pesan */
+  margin-bottom: 20px; /* Memberikan jarak di bawah pesan */
+}
+
+/* Mengatur form dan input agar terlihat lebih rapi */
+.form-floating {
+  margin-bottom: 15px; /* Jarak antara form */
+}
+
+.form-control {
+  border-radius: 10px; /* Membulatkan sudut input */
+  padding: 10px; /* Memberikan padding untuk input */
+  font-size: 14px; /* Ukuran font dalam input */
+}
+
+label {
+  font-size: 14px; /* Ukuran font untuk label input */
+}
+/* Menambahkan gaya untuk tombol login */
+/* Membuat div yang membungkus tombol-tombol sejajar */
+.button-group {
+  display: flex; /* Menggunakan Flexbox */
+  justify-content: space-between; /* Memberikan jarak antar tombol */
+  gap: 10px; /* Memberikan jarak antar tombol */
+  align-items: center; /* Menyelaraskan tombol di tengah secara vertikal */
+}
+
+/* Tombol Login */
+button[type="submit"] {
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: white;
+  color: #007bff;
+  border: 2px solid #007bff;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+  color: white;
+  border-color: #0056b3;
+}
+
+/* Tombol Kembali */
+button[type="button"] {
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: white;
+  color: #6c757d;
+  border: 2px solid #6c757d;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+button[type="button"]:hover {
+  background-color: #6c757d;
+  color: white;
+  border-color: #5a6268;
+  cursor: pointer;
+}
+
+
+/* Gaya untuk recaptcha container */
+.recaptcha-container {
+  margin-bottom: 20px; /* Jarak bawah untuk recaptcha */
+}
+
+/* Responsif pada layar kecil */
+@media (max-width: 768px) {
+  .login-box {
+      width: 100%; /* Agar card menyesuaikan dengan lebar layar pada perangkat kecil */
+      padding: 15px;
+  }
+}
+
+/* Gaya untuk pesan error */
+.alert {
+  margin-top: 10px;
+  font-size: 14px;
+  color: red;
+  text-align: center;
+}
